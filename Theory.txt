@@ -1,0 +1,30 @@
+WebSocket and STOMP (Streaming Text Oriented Messaging Protocol) are related but serve different purposes in the context of web communication.
+
+WebSocket:
+
+WebSocket is a communication protocol that provides full-duplex communication channels over a single, long-lived connection.
+
+It is a low-level protocol that enables bidirectional communication between a client (such as a web browser) and a server.
+
+WebSocket is not specific to messaging; rather, it provides a general-purpose communication channel that can be used for various applications, 
+including real-time data transfer, gaming, and more.
+
+WebSocket connections are established through a handshake process, and once established, both the client and server can send data to each other at any time.
+
+
+STOMP (Streaming Text Oriented Messaging Protocol):
+
+STOMP is a messaging protocol designed for communication between clients and message-oriented middleware, often used in the context of message queues 
+or publish-subscribe systems.
+
+It operates on top of protocols like WebSocket or other transport protocols, providing a text-based wire protocol for communication.
+
+STOMP defines message formats and commands for subscribing to and publishing messages to various channels or topics.
+
+It is often used in scenarios where real-time updates or messaging between clients and servers are needed, such as in chat applications or systems involving 
+event-driven architectures.
+
+In summary, WebSocket is a low-level protocol for establishing a full-duplex communication channel between a client and a server, while STOMP is a higher-level 
+messaging protocol that operates on top of WebSocket (or other transport protocols) to facilitate message-based communication in scenarios where real-time messaging 
+or event-driven architectures are essential. STOMP defines conventions for message formats, subscriptions, and more, making it easier to implement messaging features 
+in web applications.
